@@ -22,20 +22,37 @@
             poder fazer as configurações no seu ambiente.
           </p>
           <form action="login.php" method="post" autocomplete="on">
+
             <div class="campo">
               <i class="material-icons">login</i>
-              <input type="email" name="login" id="ilogin" placeholder="Digite seu e-mail..." autocomplete="email" required/>
+              <input
+                type="email"
+                name="login"
+                id="ilogin"
+                placeholder="Digite seu e-mail..."
+                autocomplete="email"
+                required
+              />
               <label for="ilogin ">person:</label>
             </div>
 
             <div class="campo">
               <i class="material-icons">vpn_key</i>
-              <input type="password" name="senha" id="isenha" minlength="8" maxlength="20" placeholder="Digite sua senha..." autocomplete="current-password" required/>
+              <input
+                type="password"
+                name="senha"
+                id="isenha"
+                minlength="8"
+                maxlength="20"
+                placeholder="Digite sua senha..."
+                autocomplete="current-password"
+                required
+              />
               <label for="isenha">Senha:</label>
             </div>
 
             <input type="submit" value="Entrar" />
-            <a href="esqueci.html">
+            <a class="botao" href="esqueci.html">
               <i class="material-icons">mail</i>Esqueci a senha</a
             >
           </form>
