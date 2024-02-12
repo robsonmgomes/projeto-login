@@ -7,5 +7,51 @@
   --cor02: #000000;
   --cor03: #49a09d;
   --cor04: #5f2c82;
-  --fonte-principal: arial, 'helvética' sans-serif;
+  --fonte-principal: arial, 'helvetica' sans-serif;
+  --fonte-secundária: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue'
+}
+
+* {
+  font-family: var(--fonte-secundária);
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body, html {
+  background-color: var(--cor04);
+  height: 100vh;
+  width: 100vw;
+}
+
+main {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+section#login {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  background-color: var(--cor01);
+  width: 250px;
+  height: 500px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
+}
+
+section#login > div#imagem {
+  display: block;
+  background: url(../imagens/img01.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 200px;
+}
+
+section#login > div#formulario {
+  display: block;
+  padding: 10px;
 }
